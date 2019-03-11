@@ -1,4 +1,11 @@
 PODS:
+  - AppCenter/Analytics (1.13.2):
+    - AppCenter/Core
+  - AppCenter/Core (1.13.2)
+  - AppCenter/Crashes (1.13.2):
+    - AppCenter/Core
+  - AppCenterReactNativeShared (1.12.2):
+    - AppCenter/Core (= 1.13.2)
   - Firebase/Core (5.18.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.7.0)
@@ -50,10 +57,15 @@ PODS:
   - nanopb/encode (0.3.901)
 
 DEPENDENCIES:
+  - AppCenter/Analytics (~> 1.13.2)
+  - AppCenter/Crashes (~> 1.13.2)
+  - AppCenterReactNativeShared (~> 1.12.2)
   - Firebase/Core
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AppCenter
+    - AppCenterReactNativeShared
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -63,6 +75,8 @@ SPEC REPOS:
     - nanopb
 
 SPEC CHECKSUMS:
+  AppCenter: bce7fe1098e8e8aeb70aaae1898600534069f549
+  AppCenterReactNativeShared: 6c0750b874f3242c47cb64083e23b835975c6aa2
   Firebase: 02f3281965c075426141a0ce1277e9de6649cab9
   FirebaseAnalytics: 23851fe602c872130a2c5c55040b302120346cc2
   FirebaseCore: 52f851b30e11360f1e67cf04b1edfebf0a47a2d3
@@ -71,6 +85,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 111a012f4c3a29c9e7c954c082fafd6ee3c999c0
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 409329505f9286d705879f36ba0f4860b1bdc639
+PODFILE CHECKSUM: 58ff8b78b295547318d73ca2d4d3aca8ffe7f1a2
 
 COCOAPODS: 1.6.1
